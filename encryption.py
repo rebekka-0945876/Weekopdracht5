@@ -23,3 +23,17 @@ def decrypt():
     text = input("Voer nu de versleutelde tekst in die u wilt ontsleutelenn: ")
     print(f'De versleutelde tekst die u heeft ingevoerd is: {text}')
     print("Deze tekst is nu ontsleuteld.")
+
+
+if __name__ == "__main__":
+    while True:
+        choice = main_menu()
+        if choice == 1:
+            encrypt()
+        elif choice == 2:
+            decrypt()
+        elif choice == 3:
+            print("De app wordt nu afgsloten.")
+            break
+        else:
+            print("Ongeldige keuze.")
