@@ -19,8 +19,9 @@ def encrypt():
     print("U heeft gekozen voor encryptie.")
     text = input("Voer nu de tekst in die u wilt versleutelen: ")
     print(f'De tekst die u heeft ingevoerd is: {text}')
+    encrypted_message = cipher.encrypt(text.encode()).decode()
     print("Deze tekst is nu versleuteld.")
-    print(f'De versleutelde tekst is: {cipher.encrypt(text.encode())}')
+    print(f'De versleutelde tekst is: {encrypted_message}')
 
 
 def decrypt():
