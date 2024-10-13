@@ -1,0 +1,2 @@
+You could use this to test the encryption and decryption functions for files.
+When prompted for a path enter the path to this file: testfile.txt or testfile.txt.enc
